@@ -1,128 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link href="https://fonts.googleapis.com/css?family=Mandali|Noto+Sans|Ubuntu&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="static/css/style.css">
-    <title>Switcher</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./static/css/chat.css">
+  <script type="text/javascript" src="https://code.jquery.com/ui/1.9.2/jquery-ui.js"></script>
+  <link rel="stylesheet" type="text/css" href="https://code.jquery.com/ui/1.9.2/themes/base/jquery-ui.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <title>Switcher</title>
 </head>
-
 <body>
-    <div class="bar-flex-container">
-        <!--Sidebar-->
-        <div class="bar-side">
-            <!--Settings-->
-            <div class="bar-side-settings">
-                <a href="#profile"><img src="static/img/profile.jpg" class="usr-img"></a>
-                <a href="#profile-settings"><img src="static/img/gear.png" class="usr-img"></a>
-            </div>
-            <hr class="thick" style="margin-bottom:0;">
-            <!--User contact-->
-            <div class="bar-side-inner">
-                <!--User card-->
-                <a href="#user-card">
-                    <h3><img class="avatar-img">Owen</h3>
-                </a>
-                <hr>
-                <!--User card-->
-                <a href="#user-card">
-                    <h3><img class="avatar-img">Michal</h3>
-                </a>
-                <hr>
-                <!--User card-->
-                <a href="#user-card">
-                    <h3><img class="avatar-img">Fred</h3>
-                </a>
-                <hr>
-                <!--User card-->
-                <a href="#user-card">
-                    <h3><img class="avatar-img">Greg</h3>
-                </a>
-                <hr>
-                <!--User card-->
-                <a href="#user-card">
-                    <h3><img class="avatar-img">Thompson</h3>
-                </a>
-                <hr>
-                <!--User card-->
-                <a href="#user-card">
-                    <h3><img class="avatar-img">Victoria!</h3>
-                </a>
-                <hr>
-                <!--User card-->
-                <a href="#user-card">
-                    <h3><img class="avatar-img">Sue</h3>
-                </a>
-                <hr>
-                <!--User card-->
-                <a href="#user-card">
-                    <h3><img class="avatar-img">KAREN TOOK THE KIDS</h3>
-                </a>
-                <hr>
-                <!--User card-->
-                <a href="#user-card">
-                    <h3><img class="avatar-img">Gary</h3>
-                </a>
-                <hr>
-                <!--User card-->
-                <a href="#user-card">
-                    <h3><img class="avatar-img">Bart</h3>
-                </a>
-                <hr>
-                <!--User card-->
-                <a href="#user-card">
-                    <h3><img class="avatar-img">Lisa</h3>
-                </a>
-                <hr>
-                <!--User card-->
-                <a href="#user-card">
-                    <h3><img class="avatar-img">Homer</h3>
-                </a>
-                <hr>
-                <!--User card-->
-                <a href="#user-card">
-                    <h3><img class="avatar-img">Marge</h3>
-                </a>
-            </div>
-        </div>
-        <!--Mainbar-->
-        <div class="bar-main bar-main-flex-container">
-            <div class="bar-main-texts">
-                <!--Texts-->
-                <div class="bar-inner">
-                    <a href="#user-card">
-                        <p><img class="avatar-img-small">Hi</p>
-                    </a>
-                    <hr>
-                    <a href="#user-card">
-                        <p><img class="avatar-img-small">Hello!</p>
-                    </a>
-                    <hr>
-                    <a href="#user-card">
-                        <p><img class="avatar-img-small">This is the end of the chat</p>
-                    </a>
-                    <hr>
-                    <a href="#user-card">
-                        <p><img class="avatar-img-small">Are you sure about that?</p>
-                    </a>
-                    <hr>
-                    <a href="#user-card">
-                        <p><img class="avatar-img-small">Indeed, most probably deninatly maybe not</p>
-                    </a>
-                    <hr>
-                </div>
-            </div>
-            <!--Message box-->
-            <div>
-                <form action="">
-                    <input type="text" class="bar-main-tb">
-                </form>
-            </div>
-        </div>
+<div class="bar-flex-container">
+  <!--Sidebar-->
+  <div class="bar-side">
+    <!--Settings-->
+    <div class="bar-side-settings">
+      <a href="#profile"><img src="./static/img/profile.jpg" class="usr-img"></a>
+      <a href="#profile-settings"><img src="./static/img/gear.png" class="usr-img"></a>
     </div>
-</body>
+    <!--User contact-->
+    <div class="bar-side-inner">
+      <div class="space"></div>
+      <!--User card-->
+      <div style="margin-left: 0.625rem; margin-top: 0.625rem; 0.625rem; margin-bottom: 1rem;">Public</div>
+      <hr>
+      <div class="space"></div>
+    </div>
+  </div>
+  <!--Mainbar-->
+  <div class="bar-main bar-main-flex-container">
+    <div class="bar-main-chat">
+      <div class="bar-main-texts">
+        <div class="space"></div>
 
+        <div class="bar-profile">
+          <div style="margin-left: 0.625rem; margin-top: 0.625rem; 0.625rem; margin-bottom: 1rem;">Public</div>
+          <hr class="endless">
+        </div>
+
+        <!--Texts-->
+        <div class="bar-inner">
+          <div class="space"></div>
+          <label><img class="avatar-img">Hello!</label>
+          <div class="space"></div>
+          <hr>
+          <div class="space"></div>
+          <label><img class="avatar-img">Hello!</label>
+          <div class="space"></div>
+          <hr>
+        </div>
+      </div>
+    </div>
+    <!--Message box-->
+    <div class="bar-main-tb-parent">
+      <textarea rows="1" class="bar-main-tb"></textarea>
+    </div>
+  </div>
+</div>
+<script src="static/js/chat.js"></script>
+</body>
 </html>

@@ -1,0 +1,165 @@
+body {
+    width: 100%;
+    height: 100%;
+    display: block;
+    margin: 100%;
+    padding: 0;
+    background: linear-gradient(to right, #651291, #179193, #8d9317, #651291);
+    color: #ffffff;
+    overflow: hidden;
+    background-size: 300% 300%;
+    animation: gradientFade 240s ease infinite;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+@keyframes gradientFade {
+    0% {
+        background-position: 0 0;
+    }
+    12.5% {
+        background-position: 25% 25%;
+    }
+    25% {
+        background-position: 50% 50%;
+    }
+    37.5% {
+        background-position: 75% 75%;
+    }
+    50% {
+        background-position: 100% 100%;
+    }
+    62.5% {
+        background-position: 75% 75%;
+    }
+    75% {
+        background-position: 50% 50%;
+    }
+    87.5% {
+        background-position: 25% 25%;
+    }
+    100% {
+        background-position: 0 0;
+    }
+}
+
+.bar-flex-container {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 1%;
+}
+
+.bar-side {
+    flex-basis: 1;
+    flex-grow: 1;
+    min-width: 15rem;
+    border: 0.15rem solid #ffffff;
+    border-right: 0;
+    border-top-left-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+}
+
+.bar-main {
+    flex-basis: 4;
+    flex-grow: 4;
+    border: 0.15rem solid #ffffff;
+    border-top-right-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+}
+
+.bar-inner {
+    margin: 0.75rem;
+}
+
+.bar-side-inner {
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+    overflow-y: scroll;
+    height: calc(100% - 4.4rem);
+}
+
+.avatar-img {
+    width: 2.5rem;
+    height: 2.5rem;
+    vertical-align: -60%;
+    margin-right: 0.6rem;
+    border-radius: 50%;
+    background-color: #ffffff;
+}
+
+.avatar-img-small {
+    width: 2rem;
+    height: 2rem;
+    vertical-align: -50%;
+    margin-right: 0.5rem;
+    border-radius: 50%;
+    background-color: #ffffff;
+}
+
+.usr-img {
+    width: 2.5rem;
+    margin-right: 0.5rem;
+}
+
+hr {
+    border: 0.1px solid #ffffff;
+    border-radius: 1rem;
+}
+
+.thick {
+    border: 0.1rem solid #ffffff;
+    border-radius: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+a:focus {
+    outline: none;
+}
+
+/* Total size is 1+2.5+1 */
+
+.bar-side-settings {
+    margin-top: 1rem;
+    text-align: center;
+}
+
+.bar-main-flex-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.bar-main-tb {
+    background-color: transparent;
+    width: calc(100% - 1.4rem);
+    height: 2rem;
+    border-bottom-right-radius: 1rem;
+    padding-left: 0.7rem;
+    padding-right: 0.7rem;
+    border: 0;
+    border-top: 0.15rem solid #ffffff;
+    font-weight: bold;
+}
+
+.bar-main-texts {
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+    width: 10px !important;
+    height: 10px !important;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.2);
+    border-color: transparent;
+}
